@@ -84,6 +84,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="Utility\EnumHelperTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
@@ -95,6 +96,10 @@
     <ProjectReference Include="..\EasyDotNet.MVC.Sample\EasyDotNet.MVC.Sample.csproj">
       <Project>{5BCC73E8-BC43-4254-84E5-79F95D928854}</Project>
       <Name>EasyDotNet.MVC.Sample</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyDotNet\EasyDotNet.csproj">
+      <Project>{01AE4121-629E-47E6-AB78-D992351CC13F}</Project>
+      <Name>EasyDotNet</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

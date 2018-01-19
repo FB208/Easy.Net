@@ -9,7 +9,7 @@ using System.Xml;
 
 namespace EasyDotNet.MVC.Sample.Controllers
 {
-    public class UtilityController : Controller
+    public class XmlHelperController : Controller
     {
         /// <summary>
         /// Class序列化
