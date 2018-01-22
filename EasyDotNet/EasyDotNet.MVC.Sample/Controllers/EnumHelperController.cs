@@ -19,8 +19,13 @@ namespace EasyDotNet.MVC.Sample.Controllers
 
         public ActionResult ToDictionary2()
         {
-            
             var dict = typeof(ApproveEnum).ToDictionary((m,n)=>m.FullName+n,(m,n)=>(n+1).ToString());
+            return View();
+        }
+
+        public ActionResult GetHtmlFormated()
+        {
+            var result = typeof(ApproveEnum).GetHtmlFormated(1,new object[] {"qqq","www"});
             return View();
         }
     }
